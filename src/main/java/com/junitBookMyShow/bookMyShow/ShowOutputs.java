@@ -11,15 +11,19 @@ public class ShowOutputs {
     private int seatNo;
     private int noOfSeats;
     private int amount;
-    private String section;
+   // private char value;
 
-    public ShowOutputs(Date day, Time time, char row, String movie, int seatNo, int noOfSeats) {
+
+    public ShowOutputs(Date day, Time time, char row, String movie, int seatNo, int noOfSeats,int amount) {
         this.day = day;
         this.time = time;
         this.row = row;
         this.movie = movie;
         this.seatNo = seatNo;
         this.noOfSeats = noOfSeats;
+        this.amount=amount;
+       // this.value=value;
+       // this.price=price;
 
     }
 
@@ -51,7 +55,22 @@ public class ShowOutputs {
         return amount;
     }
 
-    public String getSection() {
-        return section;
+   // public char getValue(){
+       // return value;
+    //}
+
+
+    @Override
+    public String toString() {
+        return "Movie Ticket{" +
+                "day=" + day +
+                ", time=" + time +
+                ", row=" + row +
+                ", movie='" + movie + '\'' +
+                ", seatNo=" + seatNo +
+                ", noOfSeats=" + noOfSeats +
+
+
+                '}';
     }
 }

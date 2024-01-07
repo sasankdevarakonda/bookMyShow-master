@@ -11,6 +11,7 @@ public class ShowInputs {
     private String movie;
     private int seatNo;
     private int noOfSeats;
+   // private char value;
 
 
     public ShowInputs(int mobileNo, Date day, Time time, char row, String movie, int seatNo, int noOfSeats) {
@@ -52,4 +53,20 @@ public class ShowInputs {
         return noOfSeats;
     }
 
+    //public char getValue() {
+      //  return value;
+    //}
+
+    @Override
+    public String toString() {
+        return "ShowInputs{" +
+                "mobileNo=" + mobileNo +
+                ", day=" + day +
+                ", time=" + time +
+                ", row=" + row +
+                ", movie='" + movie + '\'' +
+                ", seatNo=" + seatNo +
+                ", noOfSeats=" + noOfSeats +
+                '}';
+    }
 }
